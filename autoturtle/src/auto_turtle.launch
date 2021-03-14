@@ -1,0 +1,13 @@
+<launch>
+    <!--tama on kommentti-->
+    <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"/>
+
+    <node pkg="turtlesim" type="turtle_teleop_key" name="turtle_teleop_key">
+
+    <node pkg="randomwalk_wallavoider_node.py" type="randomwalk_wallavoider_node.py" name="randomwalk_wallavoider_node.py"/>
+
+     <node pkg="randomwalk_wallavoider_node.py" type="turtlebot_auto" name="turtlebot_auto"/>
+
+    </node>
+    
+</launch>
