@@ -10,6 +10,7 @@ project(tf2_harjoitus)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
+  tf2
   tf2_ros
   turtlesim
 )
@@ -106,7 +107,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES tf2_harjoitus
-#  CATKIN_DEPENDS roscpp rospy tf2_ros turtlesim
+#  CATKIN_DEPENDS roscpp rospy tf2 tf2_ros turtlesim
 #  DEPENDS system_lib
 )
 
